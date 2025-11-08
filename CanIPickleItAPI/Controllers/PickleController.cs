@@ -46,6 +46,7 @@ namespace CanIPickleItAPI.Controllers
         [HttpGet("can-pickle")]
         public async Task<ActionResult<PickleCheckResult>> CanPickleGet([FromQuery] string item)
         {
+            _logger.LogInformation("Get Pickle facts called!");
             if (string.IsNullOrWhiteSpace(item))
             {
                 return BadRequest("Item parameter cannot be empty or null");
