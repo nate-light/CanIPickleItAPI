@@ -1,0 +1,6 @@
+@CanIPickleItAPI_HostAddress = http://localhost:5222
+
+GET {{CanIPickleItAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
